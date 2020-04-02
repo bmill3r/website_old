@@ -73,3 +73,5 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - .gitignore
+
+theme: jekyll-theme-cayman
