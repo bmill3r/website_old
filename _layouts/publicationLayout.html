@@ -2,8 +2,8 @@
 layout: default
 ---
 
-{%- assign _posts = site.posts | sort: 'date' | reverse -%}
-{%- include header.html scrolly_nav=_posts -%}
+{%- assign _papers = site.papers | sort: 'date' | reverse -%}
+{%- include header.html scrolly_nav=_papers -%}
 
 <!-- Main -->
 <div id="main">
@@ -13,23 +13,23 @@ layout: default
 	{%- endif -%}
 
 	<!-- Posts List -->
-	{%- for _post in _posts -%}
+	{%- for _paper in _papers -%}
 
 		{%- capture _title -%}
-			<a href="{{- _post.url | absolute_url -}}">{{- _post.title -}}</a>
+			<a href="{{- _paper.url | absolute_url -}}">{{- _paper.title -}}</a>
 		{%- endcapture -%}
 
 		{%- capture _subtitle -%}
-			{% if _post.author -%}{{- _post.author }} | {% endif %}
-			{{- _post.date | date_to_long_string -}}
+			{% if _paper.author -%}{{- _paper.author }} | {% endif %}
+			{{- _paper.date | date_to_long_string -}}
 		{%- endcapture -%}
 
 		{%- capture _excerpt -%}
-			<p>{{- _post.excerpt | strip_html | truncatewords: 40 -}}</p>
+			<p>{{- _paper.excerpt | strip_html | truncatewords: 40 -}}</p>
 		{%- endcapture -%}
 
 		{%- capture _link -%}
-			<a href="{{- _post.url | absolute_url -}}">read more</a>
+			<a href="{{- _paper.url | absolute_url -}}">read more</a>
 		{%- endcapture -%}
 
 		{%- assign _content = _excerpt | append: _link -%}

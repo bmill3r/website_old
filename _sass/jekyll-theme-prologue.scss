@@ -61,11 +61,11 @@
 
 	body {
 		background: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
-		font-weight: 300;
+		font-family: 'Helvetica', sans-serif;
+		font-size: 16pt;
+		font-weight: 400;
 		line-height: 1.75em;
-		color: #888;
+		color: #303030 ;
 
 		&.is-loading * {
 			@include vendor('transition', 'none !important');
@@ -75,15 +75,15 @@
 
 	input, textarea, select {
 		font-family: 'Arial', sans-serif;
-		font-size: 30pt;
+		font-size: 14pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #303030 ;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #080808 ;
 		line-height: 1.5em;
 	}
 
@@ -248,7 +248,7 @@
 		&.avatar48 {
 			width: 48px;
 			height: 48px;
-			background: #f00;
+			background: #000;
 
 			img {
 				width: 48px;
