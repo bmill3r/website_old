@@ -24,8 +24,8 @@ url: "http://bmill3r.github.io/"
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # The following settings are NECESSARY for the Prologue theme to run:
-# theme: jekyll-theme-prologue
-remote_theme: chrisbobbe/jekyll-theme-prologue
+theme: jekyll-theme-prologue
+# remote_theme: chrisbobbe/jekyll-theme-prologue
 collections: [sections]
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -54,24 +54,24 @@ google_analytics:
 # theme_color: blue
 # theme: oscailte
 # remote_theme: coogie/oscailte
-markdown: kramdown
+# markdown: kramdown
 # highlighter: rouge
 
-plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
+# plugins:
+#   - jekyll-feed
+#   - jekyll-remote-theme
 
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - .gitignore
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+#   - .gitignore
 
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
