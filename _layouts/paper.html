@@ -12,14 +12,18 @@
 
     <br><br>
 
-    <p><b>Paper:</b> <a href="{{ page.journalurl }}" target="_blank"> {{ page.journal }} </a> |
-    <a href="{{ page.pubmedurl }}" target="_blank"> Pubmed </a> |
-    <a href="{{ page.pdfurl }}" target="_blank"> PDF </a></p>
+    <p><b>Paper:</b> <a href="{{ page.journalurl }}" target="_blank"> {{ page.journal }} </a></p>
+    {% if page.pubmedurl != null %}
+    <p> | <a href="{{ page.pubmedurl }}" target="_blank"> Pubmed </a></p>
+    {% endif %}
+    <p> | <a href="{{ page.pdfurl }}" target="_blank"> PDF </a></p>
 
-    <br><br>
-
-    {% if page.code != null %}    
-    <b>Relevant code:</b> <a href="{{ page.code }}" target="_blank"> <i class="fa fa-lg fa-github"></i></a>
+    {% if page.code != null %}
+    <b>Relevant code:</b>
+    <ul class="icons">
+        <li><a href="{{ page.code }}" class="icon-b fa-github"><span class="label">Github</span></a></li>
+    </ul>
+    <!-- <a href="{{ page.code }}" target="_blank"> <i class="fab fa-2x fa-github"></i></a> -->
     {% endif %} 
 
 </div>
