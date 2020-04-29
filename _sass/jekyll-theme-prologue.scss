@@ -60,12 +60,12 @@
 /* Basic */
 
 	body {
-		background: #fff;
+		background: #000000;
 		font-family: 'Helvetica', sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
-		color: #303030 ;
+		color: #FFFFFF ;
 
 		&.is-loading * {
 			@include vendor('transition', 'none !important');
@@ -83,7 +83,7 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #080808 ;
+		color: #FFFFFF ;
 		line-height: 1.5em;
 	}
 
@@ -122,9 +122,14 @@
 		margin: 2em 0 0 0;
 	}
 
-	strong, b {
+	bold, b {
 		font-weight: 800;
-		color: #666;
+		color: #3CB371;
+	}
+
+	strong, sg {
+		font-weight: 800;
+		color: #d9d9d9;
 	}
 
 	em, i {
@@ -134,7 +139,7 @@
 	a {
 		text-decoration: none;
 		color: inherit;
-		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
+		border-bottom: dotted 2px #E27689;
 		@include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 		outline: 0;
 
@@ -158,7 +163,7 @@
 
 	hr {
 		border: 0;
-		border-top: solid 1px #41484c;
+		border-top: solid 4px #FFFFFF;
 	}
 
 	code {
@@ -493,7 +498,7 @@
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
 		@include vendor('justify-content', 'space-between');
-		background: #222629 url('images/overlay.png');
+		background: #669999 url('images/overlay.png');
 		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
 		color: #fff;
 		height: 100%;
@@ -618,7 +623,7 @@
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #dce3e2;
+		background-color: 	#000000;
 		padding: 3em 0 4em 0;
 		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
@@ -704,19 +709,19 @@
 			}
 
 			&.shade-one {
-				background-color: #81918E;
+				background-color: #000000;
 			}
 
 			&.shade-two {
-				background-color: #f5fafa;
+				background-color: #000000;
 			}
 
 			&.shade-three {
-				background-color: #ecf1f1;
+				background-color: #202020;
 			}
 
 			&.shade-four {
-				background-color: #e8edec;
+				background-color: #000000;
 			}
 		}
 	}
