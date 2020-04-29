@@ -107,6 +107,7 @@
 	}
 
 	h3 {
+		color: #000000;
 		font-size: 1.3em;
 	}
 
@@ -138,8 +139,8 @@
 
 	a {
 		text-decoration: none;
-		color: inherit;
-		border-bottom: dotted 2px #E27689;
+		color: #d9d9d9;
+		border-bottom: groove 2px #d9d9d9;
 		@include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 		outline: 0;
 
@@ -258,7 +259,7 @@
 		&.avatar48 {
 			width: 48px;
 			height: 48px;
-			background: #000;
+			background: #669999;
 
 			img {
 				width: 48px;

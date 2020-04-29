@@ -28,7 +28,7 @@
 		<header>
 			<h2>
         {%- if include.auto-header == null or include.auto-header == 'use-title' -%}
-          {{- _title -}}
+          <b>{{- _title -}}</b>
         {%- else -%}
           {{- include.auto-header -}}
         {%- endif -%}
